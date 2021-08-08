@@ -1,11 +1,11 @@
-
-
+import Navber from './Navber/Navber';
+import './index.css';
 function App() {
   return (
     <div>
-      OneDevers
+      <Navber/>
     </div>
-  );
-}
+  )
+};
 
 export default App;
