@@ -1,6 +1,19 @@
-import React from 'react'
+import React from 'react';
+import emailjs from 'emailjs-com';
 
 const Sendemail = () => {
+  function sendMail(e){
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_mo65tqe",
+      "template_4lro8ra",
+      e.target,
+      "user_HP5o30AfGvdev2JHJH54r"
+    ).then(res=>{
+      console.log(res);
+    }).catch(err=>console.log(err));
+  }
     return (
         <div className="overflow-hidden bg-gray-100 bg-opacity-40">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -58,7 +71,23 @@ const Sendemail = () => {
                 <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                   Sign up for updates
                 </h3>
-                <form>
+                <form onSubmit={sendMail}>
+                  <div className="mb-1 sm:mb-2">
+                    <label
+                      htmlFor="email"
+                      className="inline-block mb-1 font-medium"
+                    >
+                      E-mail
+                    </label>
+                    <input
+                      placeholder="E-mail"
+                      required
+                      type="text"
+                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                      id="email"
+                      name="email"
+                    />
+                  </div>
                   <div className="mb-1 sm:mb-2">
                     <label
                       htmlFor="name"
@@ -67,7 +96,7 @@ const Sendemail = () => {
                       Name
                     </label>
                     <input
-                      placeholder="John Doe"
+                      placeholder="name"
                       required
                       type="text"
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
@@ -77,19 +106,17 @@ const Sendemail = () => {
                   </div>
                   <div className="mb-1 sm:mb-2">
                     <label
-                      htmlFor="email"
+                      htmlFor="name"
                       className="inline-block mb-1 font-medium"
                     >
-                      E-mail
+                      Message
                     </label>
-                    <input
-                      placeholder="john.doe@example.org"
-                      required
-                      type="text"
-                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                      id="email"
-                      name="email"
-                    />
+                    <textarea
+                     placeholder="Message"
+                     className="resize-none w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" rows="4"
+                     id="message"
+                     name="message"
+                     />
                   </div>
                   <div className="mt-4 mb-2 sm:mb-4">
                     <button

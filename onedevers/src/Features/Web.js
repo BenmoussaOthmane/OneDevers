@@ -46,7 +46,7 @@ const Web = () => {
         <div>
           <img
             className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-            src="https://i.pinimg.com/564x/0a/80/33/0a803344da1bca710ad22da490269330.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+            src="https://cdn.dribbble.com/users/1126935/screenshots/14707518/media/751bc02fb76ed4ff254feb6d4fb9abb3.png?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
             alt=""
           />
         </div>

@@ -7,6 +7,7 @@ import Web from './Features/Web';
 import Team from './Features/Team';
 import Footer from './Footer/Footer';
 import Sendemail from './Features/Sendemail';
+import DesktopApp from './Features/DesktopApp';
 function App() {
   return (
     <div>
@@ -15,6 +16,7 @@ function App() {
       <Features/>
       <Mobile/>
       <Web/>
+      <DesktopApp/>
       <Sendemail/>
       <Team/>
       <Footer/>
