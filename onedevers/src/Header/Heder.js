@@ -2,7 +2,7 @@ import React from 'react'
 
 const Heder = () => {
     return (
-        <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-500 relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
+        <div id="header" className="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-500 relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
         <div className="flex flex-col items-start w-full max-w-xl px-4 mx-auto lg:px-8 lg:max-w-screen-xl">
           <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
             <div className="max-w-xl mb-6">
@@ -12,17 +12,10 @@ const Heder = () => {
                 </p>
               </div>
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                The quick, brown fox
-                <br className="hidden md:block" />
-                jumps over{' '}
-                <span className="inline-block text-deep-purple-accent-400">
-                  a lazy dog
-                </span>
+              Think Aheadx
               </h2>
               <p className="text-base text-gray-300 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+              Learn how OneDevers custom software development services will reduce costs and increase the long-term value of your projects.
               </p>
             </div>
             <div className="flex flex-col items-center md:flex-row">

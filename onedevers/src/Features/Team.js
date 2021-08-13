@@ -2,7 +2,7 @@ import React from 'react'
 
 const Team = () => {
     return (
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div id ="team" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex items-center justify-center -mx-4 lg:pl-8">
               <div className="flex flex-col items-end px-3">
@@ -79,9 +79,7 @@ const Team = () => {
                   </span>
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                  quae. explicabo.
+                OneDevers Software Development was founded with a mission to deliver better value for clients who have long-term vision for their applications. Our culture encourages staff members to ask questions, communicate in a direct and transparent manner and Think Ahead to provide the highest long-term value of our clients projects.
                 </p>
               </div>
             </div>

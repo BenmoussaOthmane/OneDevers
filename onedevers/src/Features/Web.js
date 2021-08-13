@@ -2,7 +2,7 @@ import React from 'react'
 
 const Web = () => {
     return (
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div id="web" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="lg:pr-10">
           <a
@@ -36,10 +36,7 @@ const Web = () => {
             </span>
           </h5>
           <p className="mb-6 text-gray-900">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae explicabo. Sed ut perspiciatis unde omnis iste natus error sit
-            voluptatem totam rem aperiam, eaque ipsa quae explicabo.
+          We are a multidisciplinary team , formed by young experts, specialized in just high-quality brands, web design and web developing with cuttin edge technologies, Up-to-date Security and Trending Design 2020-2021.
           </p>
          
         </div>
