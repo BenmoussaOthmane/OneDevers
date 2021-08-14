@@ -20,15 +20,14 @@ const Sendemail = () => {
         <div className="flex flex-col items-center justify-between xl:flex-row">
           <div className="w-full max-w-xl mb-12 xl:pr-16 xl:mb-0 xl:w-7/12">
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl sm:leading-none">
-              The quick, brown fox <br className="hidden md:block" />
-              jumps over a{' '}
-              <span className="text-teal-accent-400">lazy dog</span>
+            Contact Us About <br className="hidden md:block" />
+              {/* jumps over a{' '} */}
+              {/* <span className="text-teal-accent-400">lazy dog</span> */}
             </h2>
             <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudan, totam rem aperiam, eaque ipsa quae.
+             Contact OneDevers before proceeding so we can discuss your exact requirements and how he can help you achieve your development goals cost effectively, on time and on budget.
             </p>
-            <a
+            {/* <a
               href="/"
               aria-label=""
               className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
@@ -41,7 +40,7 @@ const Sendemail = () => {
               >
                 <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
               </svg>
-            </a>
+            </a> */}
           </div>
           <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
             <div className="relative">
@@ -69,15 +68,31 @@ const Sendemail = () => {
               </svg>
               <div className="relative bg-white rounded shadow-2xl p-7 sm:p-10">
                 <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
-                  Sign up for updates
+                Contact Us
                 </h3>
                 <form onSubmit={sendMail}>
+                <div className="mb-1 sm:mb-2">
+                    <label
+                      htmlFor="name"
+                      className="inline-block mb-1 font-medium"
+                    >
+                      Name*
+                    </label>
+                    <input
+                      placeholder="name"
+                      required
+                      type="text"
+                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                      id="name"
+                      name="name"
+                    />
+                  </div>
                   <div className="mb-1 sm:mb-2">
                     <label
                       htmlFor="email"
                       className="inline-block mb-1 font-medium"
                     >
-                      E-mail
+                      E-mail*
                     </label>
                     <input
                       placeholder="E-mail"
@@ -93,26 +108,10 @@ const Sendemail = () => {
                       htmlFor="name"
                       className="inline-block mb-1 font-medium"
                     >
-                      Name
-                    </label>
-                    <input
-                      placeholder="name"
-                      required
-                      type="text"
-                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                      id="name"
-                      name="name"
-                    />
-                  </div>
-                  <div className="mb-1 sm:mb-2">
-                    <label
-                      htmlFor="name"
-                      className="inline-block mb-1 font-medium"
-                    >
-                      Message
+                      How we can help you?*
                     </label>
                     <textarea
-                     placeholder="Message"
+                     placeholder="How we can help you?*"
                      className="resize-none w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" rows="4"
                      id="message"
                      name="message"
@@ -121,7 +120,7 @@ const Sendemail = () => {
                   <div className="mt-4 mb-2 sm:mb-4">
                     <button
                       type="submit"
-                      className="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-500  inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="bg-indigo-900 inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                     >
                       Subscribe
                     </button>
