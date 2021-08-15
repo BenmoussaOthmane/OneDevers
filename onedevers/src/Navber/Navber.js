@@ -1,10 +1,10 @@
-import React , {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-scroll";
 const Navber = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    return (
-        <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-500">
+  return (
+    <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-blue-500">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <a
@@ -13,82 +13,82 @@ const Navber = () => {
             title="Company"
             className="inline-flex items-center"
           >
-            <span className="ml-8 text-xl font-bold tracking-wide text-gray-100 uppercase">
+            <span className="ml-8 text-xl font-bold tracking-wide text-gray-100 uppercase cursor-pointer">
               OneDevers
             </span>
           </a>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <Link
-    activeClass="active"
-    to="features"
-    spy={true}
-    smooth={true}
-    offset={0}
-    duration={500}
-    className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-    >
-    Features</Link>
+              activeClass="active"
+              to="features"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400xs cursor-pointer"
+            >
+              Features</Link>
             <Link
-    activeClass="active"
-    to="mobile"
-    spy={true}
-    smooth={true}
-    offset={0}
-    duration={500}
-    className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-    >
-    Mobile</Link>
+              activeClass="active"
+              to="mobile"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 cursor-pointer"
+            >
+              Mobile</Link>
             <Link
-    activeClass="active"
-    to="web"
-    spy={true}
-    smooth={true}
-    offset={0}
-    duration={500}
-    className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-    >
-    Web</Link>
+              activeClass="active"
+              to="web"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 cursor-pointer"
+            >
+              Web</Link>
             <Link
-    activeClass="active"
-    to="desktopapp"
-    spy={true}
-    smooth={true}
-    offset={0}
-    duration={500}
-    className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-    >
-    Desktop</Link>
+              activeClass="active"
+              to="desktopapp"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 cursor-pointer"
+            >
+              Desktop</Link>
             <Link
-    activeClass="active"
-    to="team"
-    spy={true}
-    smooth={true}
-    offset={0}
-    duration={500}
-    className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-    >
-About Us</Link>
+              activeClass="active"
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 cursor-pointer"
+            >
+              About Us</Link>
             <Link
-    activeClass="active"
-    to="sendemail"
-    spy={true}
-    smooth={true}
-    offset={0}
-    duration={500}
-    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-    aria-label="Sign up"
-    title="Sign up"
-    >
-    Contacte</Link>
+              activeClass="active"
+              to="sendemail"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none cursor-pointer"
+              aria-label="Sign up"
+              title="Sign up"
+            >
+              Contacte</Link>
 
-            
-           
+
+
           </ul>
           <div className="lg:hidden">
             <button
               aria-label="Open Menu"
               title="Open Menu"
-              className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
+              className="bg-white p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
               onClick={() => setIsMenuOpen(true)}
             >
               <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@ About Us</Link>
               </svg>
             </button>
             {isMenuOpen && (
-              <div style={{zIndex:"9999"}} className="absolute top-0 left-0 w-full">
+              <div style={{ zIndex: "9999" }} className="absolute top-0 left-0 w-full">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
@@ -133,7 +133,7 @@ About Us</Link>
                           <rect x="14" y="11" width="7" height="12" />
                         </svg>
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                          OneDevers
                         </span>
                       </a>
                     </div>
@@ -157,48 +157,57 @@ About Us</Link>
                     <ul className="space-y-4">
                       <li>
                         <a
-                          href="/"
+                          href="#features"
                           aria-label="Our product"
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Product
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
+                        ></a>
                           Features
+                      </li>
+                      <li>
+                        <a
+                          href="#mobile"
+                          aria-label="Our product"
+                          title="Our product"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Mobile
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="#web"
                           aria-label="Product pricing"
                           title="Product pricing"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Pricing
+                          Web
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="#desktopapp"
+                          aria-label="desktopapp"
+                          title="About us"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Desktop
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#team"
                           aria-label="About us"
                           title="About us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          About us
+                          About Us
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-00 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                          href="#contact"
+                          className="bg-indigo-900 inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-00 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >
@@ -214,7 +223,7 @@ About Us</Link>
         </div>
       </div>
     </div>
-    )
+  )
 }
 
 export default Navber
